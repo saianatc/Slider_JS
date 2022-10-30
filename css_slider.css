@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p, a {
+    font-family: Nunito Sans, Arial;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+}
+
+.design__slider {
+    background-color: black;
+}
+
+.container {
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+.design__container {
+    display: flex;
+}
+
+.design__left-part {
+    margin-top: 176px;
+    margin-left: 20px;
+}
+
+.title {
+    font-family: 'Yeseva One', 'Times New Roman';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.design__title {
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    margin-bottom: 34px;
+}
+
+.design__text {
+    font-size: 14px;
+    line-height: 27px;
+    margin-right: 50px;
+    margin-bottom: 42px;
+}
+
+.design__grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 2vw;
+}
+
+.design__grid-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.design__grid-text {
+    font-size: 13px;
+    line-height: 21px;
+    margin-top: 9px;
+}
+
+.design__slider-arrows {
+    margin-top: 85px;
+    display: flex;
+}
+
+.design__slider-arrow {
+    background: none;
+    border-style: none;
+    padding: 0;
+    line-height: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    min-height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.design__slider-arrow:hover {
+    border-style: none;
+}
+
+.design__slider-arrow.left {
+    background-image: url(../Images/left.svg);
+    width: 60px;
+}
+
+.design__slider-arrow.right {
+    background-image: url(../Images/right.svg);
+    width: 60px;
+}
+
+.design__slider-dots {
+    display: flex;
+}
+
+.design__slider-dots-item {
+    width: 10px;
+    height: 10px;
+    background: rgb(70, 70, 70);
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.design__slider-dots-item:hover, .design__slider-dots-item.active {
+    background: rgb(241, 241, 241);
+}
+
+.design__right-part {
+    padding-bottom: 416px;
+    margin-right: 20px;
+}
+
+.design__link-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 107px;
+    margin-bottom: 52px;
+}
+
+.design__slider-title {
+    font-family: 'Yeseva One', 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.design__slider-title:hover {
+    color: #E3B873;
+    text-decoration: underline;
+}
+
+.design__slider-images {
+    position: relative;
+    width: 679px;
+    height: 482px;
+}
+
+.design__slider-images .image {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 800ms ease;
+}
+
+.design__slider-images .image.active {
+    opacity: 1;
+}
+
+.city, .apartmentarea, .repairtime, .repaircost {
+    font-size: 13px;
+    line-height: 21px;
+    margin-top: 9px;
+    color: white;
+}
